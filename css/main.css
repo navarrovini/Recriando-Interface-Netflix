@@ -1,0 +1,114 @@
+:root{
+    --vermelho:  #E50914;
+    --preta:     #141414;
+}
+
+*{ /* Ele se refere a todo o documento que está sendo renderizado */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Vai deixar sempre do jeito que fiz, se for menor a tela, as caixas vão se espresser 
+                                para ficar como deixei*/
+}
+
+
+/*COISAS RELACIONAS A PARTE DE CIMA DA TELA*/
+body { 
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex; /* Alinhar os elementos na linha*/
+    flex-direction: row;  /* Alinhar os elementos na linha*/
+    align-items: center;  /*alinha na vertical*/
+    justify-content: space-between; /*alinha horizontal*/
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{  /* Quando o mouse está em cima, muda a cor. (hover é uma ancora) */
+    color: #fff;
+}
+
+/* COISAS RELACIONADAS AO FILME PRINCIPAL */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Recriando\ Pagina\ Netflix/images/capa.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex; 
+    flex-direction: column; /* Alinhar os elementos em coluna*/
+    justify-content: center;  /* Deixa centralizado*/
+    align-items: flex-start; /* botão começa na esquerda e não na tela toda */
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /* Margem em volta. (1 valor = cima e baixo, 2 valor = esq e dir) */
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all; /*Delay da transição*/
+}
+
+.botao:hover{ /* Quando passa o mouse em cima do botão */
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-film{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.box-film{
+    height: auto;
+    width: auto;
+}
