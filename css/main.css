@@ -47,7 +47,7 @@ header nav a:hover{  /* Quando o mouse está em cima, muda a cor. (hover é uma 
 /* COISAS RELACIONADAS AO FILME PRINCIPAL */
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Recriando\ Pagina\ Netflix/images/capa.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('capa.jpg');
     height: 400px;
     background-size: cover;
 
